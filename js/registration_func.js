@@ -27,6 +27,8 @@ function submitData() {
 
             var status = response.status
 
+            console.log('status '+status)
+
             if (status === 200) {
                 $('#loader_form').css("display", "none")
                 Swal.fire({
@@ -34,24 +36,29 @@ function submitData() {
                     title: 'Dados Enviados com sucesso',
                     text: 'Os seus dados foram enviados com sucesso!',
                 })
-            }else if (status === 409) {
-                Swal.fire({
-                    icon: 'info',
-                    title: 'Duplicação de dados',
-                    text: 'Os seus dados ja foram registados na plataforma!',
-                })
             }
 
 
         })
         .catch(function (error) {
-            console.log(error);
-            $('#loader_form').css("display", "none")
-            Swal.fire({
-                icon: 'error',
-                title: 'Erro!',
-                text: 'Por favor verifique sua conexão a internet ou as suas definições de firewall!',
-            })
+
+            var errorCode = error.response.status
+            if (errorCode === 409) {
+                $('#loader_form').css("display", "none")
+                Swal.fire({
+                    icon: 'info',
+                    title: 'Duplicação de dados',
+                    text: 'Os seus dados ja foram registados na plataforma!',
+                })
+            }else {
+                $('#loader_form').css("display", "none")
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Erro!',
+                    text: 'Por favor verifique sua conexão a internet ou as suas definições de firewall!',
+                })
+            }
+
         });
 }
 
