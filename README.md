@@ -25,5 +25,3 @@ Tecnologias Usadas
 * Javascript
 * JQuery
 
-Ficheiros Principais
-====================
