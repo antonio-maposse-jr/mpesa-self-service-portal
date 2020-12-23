@@ -10,6 +10,17 @@ Para fazer uso deste programa basta apenas clonar ou fazer download deste reposi
 
 Demo links
 ==========
-Portal Web para M-Pesa self-registration portal: http://67.205.171.20/mpesa-self-service-portal/
-Painel Admin para M-Pesa self-registration portal: http://67.205.171.20/admin-dashboard/public/
+* Portal Web para M-Pesa self-registration portal: http://67.205.171.20/mpesa-self-service-portal/
+* Painel Admin para M-Pesa self-registration portal: http://67.205.171.20/admin-dashboard/public/
+
+
+Tecnologias Usadas
+==================
+* HTML
+* CSS
+* PHP (Backend)
+* Laravel (Backend)
+* MySQL (Backend)
+* Javascript
+* JQuery
 
