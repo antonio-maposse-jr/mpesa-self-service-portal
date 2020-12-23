@@ -25,12 +25,24 @@ function submitData() {
         .then(function (response) {
             console.log(response.status);
 
-            $('#loader_form').css("display", "none")
-            Swal.fire({
-                icon: 'success',
-                title: 'Dados Enviados com sucesso',
-                text: 'Os seus dados foram enviados com sucesso!',
-            })
+            var status = response.status
+
+            if (status === 200) {
+                $('#loader_form').css("display", "none")
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Dados Enviados com sucesso',
+                    text: 'Os seus dados foram enviados com sucesso!',
+                })
+            }else if (status === 409) {
+                Swal.fire({
+                    icon: 'info',
+                    title: 'Duplicação de dados',
+                    text: 'Os seus dados ja foram registados na plataforma!',
+                })
+            }
+
+
         })
         .catch(function (error) {
             console.log(error);
