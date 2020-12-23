@@ -1,10 +1,11 @@
 # mpesa-self-service-portal
 Este programa foi concebido apenas para efeitos de demonstração de um Portal web que permite aos clientes efecturarem um auto registo dos seus dados.
+As requisições que este programa faz são enviadas para uma VPS que contém a aplicação de Backend.
 
 
 Instalação
 ==========
-Para fazer uso deste programa basta apenas clonar ou fazer download deste repositorio e executar o fixeiro ```index.html```.
+Para fazer uso deste programa basta apenas clonar ou fazer download deste repositorio e executar o fixeiro ```index.html```. Todos os dados submetidos são enviados para o backend que faz o registo e verificação de dados. 
 
 
 
@@ -24,3 +25,5 @@ Tecnologias Usadas
 * Javascript
 * JQuery
 
+Ficheiros Principais
+====================
