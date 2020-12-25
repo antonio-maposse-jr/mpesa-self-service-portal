@@ -28,7 +28,7 @@ Tecnologias Usadas
 Exemplo
 =======
 
-````
+```javascript
  axios.post('http://67.205.171.20/admin-dashboard/public/api/create', {
         input_name: input_name,
         input_surname: input_surname,
@@ -44,5 +44,5 @@ Exemplo
         })
         .catch(function (error) {
           console.log(error)
-
         });
+```
