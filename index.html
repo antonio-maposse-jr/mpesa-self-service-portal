@@ -52,7 +52,8 @@
     <ul class="cd-primary-nav">
         <li><a href="https://www.vm.co.mz/M-Pesa2" class="animated_link">M-Pesa</a></li>
         <li><a href="https://www.vm.co.mz/Individual/Assistencia2/" class="animated_link">Assistência</a></li>
-        <li><a href="https://www.vm.co.mz/Individual/Assistencia2/Mais/Atendimento-via-Chat2" class="animated_link">Contacte-nos</a></li>
+        <li><a href="https://www.vm.co.mz/Individual/Assistencia2/Mais/Atendimento-via-Chat2" class="animated_link">Contacte-nos</a>
+        </li>
     </ul>
 </nav>
 <!-- /menu -->
@@ -74,11 +75,12 @@
                 <div>
                     <figure><img src="img/info_graphic_2.svg" alt="" class="img-fluid"></figure>
                     <h2 style="color: #e60000">M-Pesa self-registration portal</h2>
-                    <p>Tation argumentum et usu, dicit viderer evertitur te has. Eu dictas concludaturque usu, facete
-                        detracto patrioque an per, lucilius pertinacia eu vel. Adhuc invidunt duo ex. Eu tantas dolorum
-                        ullamcorper qui.</p>
-                    <a href="https://www.vm.co.mz/Individual/Assistencia2/Mais/Atendimento-via-Chat2" target="_blank"  class="btn_1 rounded">Web Chat</a>
-                    <a href="https://www.vm.co.mz/Individual/Assistencia2/Mais/Atendimento-via-Chat2" target="_blank" class="btn_1 rounded mobile_btn">Web Chat</a>
+                    <p>Este programa foi concebido apenas para efeitos de demonstração de um Portal web que permite aos
+                        clientes efecturarem um auto registo dos seus dados</p>
+                    <a href="https://www.vm.co.mz/Individual/Assistencia2/Mais/Atendimento-via-Chat2" target="_blank"
+                       class="btn_1 rounded">Web Chat</a>
+                    <a href="https://www.vm.co.mz/Individual/Assistencia2/Mais/Atendimento-via-Chat2" target="_blank"
+                       class="btn_1 rounded mobile_btn">Web Chat</a>
                 </div>
                 <div class="copy">© 2020 M-Pesa</div>
             </div>
@@ -100,7 +102,7 @@
                     <!-- Leave for security protection, read docs for details -->
                     <div id="middle-wizard">
                         <div class="step">
-<!--                            <h2 style="color: #ce1602; margin-bottom: 10px ">Formulario de Inscrição</h2>-->
+                            <!--                            <h2 style="color: #ce1602; margin-bottom: 10px ">Formulario de Inscrição</h2>-->
                             <h3 class="main_question"><strong>1/2</strong>Por favor preencha com seus dados</h3>
                             <div class="form-group">
                                 <label class="form-label">Nome *</label>
@@ -109,20 +111,23 @@
                             </div>
                             <div class="form-group">
                                 <label class="form-label">Apelido *</label>
-                                <input type="text" name="input_surname" class="form-control required" value="" placeholder="Apelido "
+                                <input type="text" name="input_surname" class="form-control required" value=""
+                                       placeholder="Apelido "
                                        onchange="getVals(this, 'input_surname');">
                             </div>
                             <div class="form-group">
                                 <label class="form-label">Data de Nascimento *</label>
-                                <input type="date" name="input_dob" id="field_input_dob" class="form-control required" placeholder="dd-mm-yyyy"
-                                       onchange="getVals(this, 'input_dob');" >
+                                <input type="date" name="input_dob" id="field_input_dob" class="form-control required"
+                                       placeholder="dd-mm-yyyy"
+                                       onchange="getVals(this, 'input_dob');">
 
                                 <span for="input_dob" class="error" id="error_dob" style="display: none"></span>
                             </div>
 
                             <div class="form-group">
                                 <label class="form-label">Número de telefone *</label>
-                                <input type="text" name="input_phone" id="field_input_phone" class="form-control required"
+                                <input type="text" name="input_phone" id="field_input_phone"
+                                       class="form-control required"
                                        placeholder="Ex: 841234567" onchange="getVals(this, 'input_phone');">
 
                                 <span for="input_phone" class="error" id="error_phone" style="display: none"></span>
@@ -131,7 +136,8 @@
                             <div class="form-group">
                                 <label class="form-label">Tipo de documento de identificação *</label>
                                 <div class="styled-select clearfix">
-                                    <select class="wide required" name="input_docType" onchange="getVals(this, 'input_docType');">
+                                    <select class="wide required" name="input_docType"
+                                            onchange="getVals(this, 'input_docType');">
                                         <option value="">Selecione o tipo de documento de identificação</option>
                                         <option value="BI">BI</option>
                                         <option value="DIRE">DIRE</option>
@@ -148,8 +154,10 @@
 
                             </div>
                             <div class="form-group terms">
-                                <label class="container_check">Por favor, aceite os nossos <a href="#" data-toggle="modal"
-                                                                                    data-target="#terms-txt">Termos e
+                                <label class="container_check">Por favor, aceite os nossos <a href="#"
+                                                                                              data-toggle="modal"
+                                                                                              data-target="#terms-txt">Termos
+                                    e
                                     condições</a>
                                     <input type="checkbox" name="terms" value="Yes" class="required">
                                     <span class="checkmark"></span>
@@ -163,14 +171,17 @@
                             <div class="summary">
                                 <ul>
                                     <li>
-                                        <h5>Em caso de falha pressione o botão de voltar para retificar os dados antes de enviar</h5>
+                                        <h5>Em caso de falha pressione o botão de voltar para retificar os dados antes
+                                            de enviar</h5>
                                         <ul>
                                             <li><label>Nome</label>: <span id="input_name"></span></li>
                                             <li><label>Apelido</label>: <span id="input_surname"></span></li>
                                             <li><label>Data de Nascimento</label>: <span id="input_dob"></span></li>
                                             <li><label>Número de telefone</label>: <span id="input_phone"></span></li>
-                                            <li><label>Documento de identificação</label>: <span id="input_docType"></span></li>
-                                            <li><label>Numero de documento de identificação</label>: <span id="input_docNumber"></span></li>
+                                            <li><label>Documento de identificação</label>: <span
+                                                    id="input_docType"></span></li>
+                                            <li><label>Numero de documento de identificação</label>: <span
+                                                    id="input_docNumber"></span></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -181,7 +192,7 @@
                     <!-- /middle-wizard -->
                     <div id="bottom-wizard">
                         <button type="button" name="backward" class="backward">Voltar</button>
-                        <button type="button" name="forward"  class="forward">Próximo</button>
+                        <button type="button" name="forward" class="forward">Próximo</button>
                         <button type="button" name="process" class="submit" onclick="submitData()">Enviar</button>
                     </div>
                     <!-- /bottom-wizard -->
