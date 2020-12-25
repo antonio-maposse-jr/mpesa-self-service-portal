@@ -1,6 +1,6 @@
 # mpesa-self-service-portal
 Este programa foi concebido apenas para efeitos de demonstração de um Portal web que permite aos clientes efecturarem um auto registo dos seus dados.
-As requisições que este programa faz são enviadas para uma VPS que contém a aplicação de Backend.
+Os dados dos clientes são enviados através de Web Services (REST) para outra aplicação que faz o registo numa base de dados MySQL e posteriormente devolve uma resposta de sucesso ou erro.
 
 
 Instalação
