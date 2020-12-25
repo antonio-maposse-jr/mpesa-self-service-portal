@@ -9,8 +9,8 @@ Para fazer uso deste programa basta apenas clonar ou fazer download deste reposi
 
 
 
-Demo links
-==========
+Demo
+====
 * Portal Web para M-Pesa self-registration portal: http://67.205.171.20/mpesa-self-service-portal/
 * Painel Admin para M-Pesa self-registration portal: http://67.205.171.20/admin-dashboard/public/
 
