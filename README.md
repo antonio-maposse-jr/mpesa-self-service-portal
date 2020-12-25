@@ -30,12 +30,12 @@ Exemplo
 
 ```javascript
  axios.post('http://67.205.171.20/admin-dashboard/public/api/create', {
-        input_name: input_name,
-        input_surname: input_surname,
-        input_dob: input_dob,
-        input_phone: input_phone,
-        input_docType: input_docType,
-        input_docNumber: input_docNumber
+        input_name: "Antonio",
+        input_surname: "Maposse Jr.",
+        input_dob: "1996-12-23",
+        input_phone: "258841111111",
+        input_docType: "BI",
+        input_docNumber: "0101010101"
     })
         .then(function (response) {
             if (status === 200) {
