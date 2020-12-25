@@ -25,3 +25,24 @@ Tecnologias Usadas
 * Javascript
 * JQuery
 
+Exemplo
+=======
+
+````
+ axios.post('http://67.205.171.20/admin-dashboard/public/api/create', {
+        input_name: input_name,
+        input_surname: input_surname,
+        input_dob: input_dob,
+        input_phone: input_phone,
+        input_docType: input_docType,
+        input_docNumber: input_docNumber
+    })
+        .then(function (response) {
+            if (status === 200) {
+                console.log(response)
+            }
+        })
+        .catch(function (error) {
+          console.log(error)
+
+        });
